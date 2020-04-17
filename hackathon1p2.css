@@ -1,0 +1,28 @@
+html > body {
+	background-color: lightblue;
+	color: purple;
+	font-size: 18px;
+}
+
+.input1, #input_btn, .input2, #calculate {
+	margin: 20px 20px;
+	width: 200px;
+}
+
+form, #log_out {
+	border: 2px solid green;
+}
+
+#log_out {
+	float: right;	
+}
+
+#input_btn, #calculate, #log_out, #add {
+	background-color: red;
+	color: white;
+}
+
+#table {
+	margin-top: 30px;
+	border: 1px solid blue;
+}
