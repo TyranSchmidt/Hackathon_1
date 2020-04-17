@@ -23,6 +23,11 @@ form, #log_out {
 }
 
 #table {
-	margin-top: 30px;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
 	border: 1px solid blue;
 }
+
+
