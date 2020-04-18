@@ -10,8 +10,21 @@
 	let btn_out= document.getElementById("log_out");
 	let btn_add= document.getElementById("add");
 	let btn_submit= document.getElementById("input_btn");
+	let btn_calculate= document.getElementById("calculate");
 
 	btn_submit.addEventListener("click", newRow);
+	btn_add.addEventListener("click", newInput);
+	btn_out.addEventListener("click", logOut);
+	btn_calculate.addEventListener("click", calculate);
+
+
+	function newInput(){
+		let new_input_name= document.createElement("input");
+		new_input_name.classList.add("input1");
+		form.insertBefore(new_input_name, form.childNodes[0]);
+		form.getElementsByTagName("input")[0].setAttribute("placeholder", "Enter your name");
+		form.getElementsByTagName("input")[0].setAttribute("type", "text");
+	}
 
 	function newRow(){
 		let input= [input_name.value, input_date.value, input_loc.value, input_type.value, input_cost.value];
@@ -33,4 +46,12 @@
 			form.reset();
 			
 		};
+	}
+
+	function calculate(){
+		
+	}
+
+	function logOut(){
+		location.href = "hackathon1.html";
 	}
