@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-let form = document.getElementsByTagName("form");
-
-let input = document.getElementsByClassName("input1");
-
-let btn_submit = document.getElementById("btn_input");
-btn_submit.addEventListener("click", newRow);
-
-function newRow() {
-	for(values of input) {
-		if(values != "")
-			console.log(hello);
-	}
-}
-=======
 	let form= document.getElementsByTagName("form")[0];
 	let table= document.getElementById("table");
 	let input_name= form.getElementsByClassName("input1")[0];
