@@ -10,10 +10,13 @@ html > body {
 input, #selection select{
 	font-family: "Montserrat";
 	border-radius: 5px;
-	margin-bottom: 5px;
 	outline: none;
 	padding: 5px 5px 5px 10px;
 	font-size: 15px;
+}
+
+.input1{
+	display: block;
 }
 
 button{
@@ -24,7 +27,6 @@ button{
 	border-radius: 4px;
 	background-color: #ff9999; 	
 }
-
 
 ::placeholder{
 	color: black;
