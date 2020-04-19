@@ -15,12 +15,16 @@ let password_value;
 
 input_up_btn.addEventListener("click", sign_up);
 function sign_up() {
-	name_value = input_up_name.value;
-	email_value = input_up_email.value;
-	password_value = input_up_password.value;
-	input_up_name.value = "";
-	input_up_email.value = "";
-	input_up_password.value = "";
+	if(input_up_name.value != "" && input_up_email.value != "" && input_up_password.value != "") {
+		name_value = input_up_name.value;
+		email_value = input_up_email.value;
+		password_value = input_up_password.value;
+		input_up_name.value = "";
+		input_up_email.value = "";
+		input_up_password.value = "";
+	} else {
+		alert("Please fill out all the required fields.")
+	}
 };
 
 input_in_btn.addEventListener("click", sign_in);
